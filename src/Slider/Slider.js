@@ -1,35 +1,72 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 
-import bg from './img/Background.png';
+import './Slider.css';
+
+import first from './img/First.png';
+import second from './img/Second.png';
+import third from './img/Third.png';
+import fourth from './img/Fourth.png';
+import fifth from './img/Fifth.png';
 
 export default () => (
-    <Carousel interval={null}>
-        <Carousel.Item>
-            <img width={900} height={500} alt="900x500" src={bg} />
-            <Carousel.Caption>
-                <h3>First slide label</h3>
-                <p>
-                    Nulla vitae elit libero, a pharetra augue mollis interdum.
-                </p>
-            </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-            <img width={900} height={500} alt="900x500" src={bg} />
-            <Carousel.Caption>
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-            <img width={900} height={500} alt="900x500" src={bg} />
-            <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>
-                    Praesent commodo cursus magna, vel scelerisque nisl
-                    consectetur.
-                </p>
-            </Carousel.Caption>
-        </Carousel.Item>
-    </Carousel>
+    <div className="Slider">
+        <Carousel interval={null}>
+            <Carousel.Item>
+                <img alt="First" src={first} />
+                <Carousel.Caption>
+                    <h3>Powerful Extensions</h3>
+                    <p>
+                        This article is floated online with an aim to help you
+                        find the best dvd printing solution. Dvd printing is an
+                        important feature
+                    </p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <img alt="second" src={second} />
+                <Carousel.Caption>
+                    <h3>Modern, User Friendly &amp; Powerful Interface</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua.
+                    </p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <img alt="Third" src={third} />
+                <Carousel.Caption>
+                    <h3>Easy to costumize</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua.
+                    </p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <img alt="Fourth" src={fourth} />
+                <Carousel.Caption>
+                    <h3>Elegant &amp; Perfect Design</h3>
+                    <p>
+                        Te sea deleniti suscipiantur deterruisset, eu quis
+                        detracto sapientem mea. An purto dicunt deserunt vix,
+                        eam te iudico tritani. Dicunt irure.
+                    </p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <img alt="Fifth" src={fifth} />
+                <Carousel.Caption>
+                    <h3>Clean &amp; Powerful Theme</h3>
+                    <p>
+                        Te sea deleniti suscipiantur deterruisset, eu quis
+                        detracto sapientem mea. An purto dicunt deserunt vix,
+                        eam te iudico tritani. Dicunt irure.
+                    </p>
+                </Carousel.Caption>
+            </Carousel.Item>
+        </Carousel>
+    </div>
 );

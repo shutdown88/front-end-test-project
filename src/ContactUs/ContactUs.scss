@@ -1,0 +1,54 @@
+.ContactUs {
+    background-color: #5e6977;
+    color: #ffffff;
+
+    h2 {
+        opacity: 0.8;
+    }
+
+    .requiredNote {
+        font-size: 14px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 2.29;
+        letter-spacing: normal;
+        text-align: center;
+    }
+
+    span.required {
+        color: #f18a8a;
+    }
+
+    input {
+        border-radius: 6px;
+        background-color: #3d4250;
+        border-color: #3d4250;
+
+        &:focus {
+            border-color: #3d4250;
+            box-shadow: none;
+        }
+
+        &,
+        &::placeholder {
+            font-size: 18px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.06;
+            letter-spacing: normal;
+            color: #ffffff;
+        }
+    }
+
+    .help-block {
+        font-size: 18px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.78;
+        letter-spacing: normal;
+        color: #d1d2d6;
+    }
+}

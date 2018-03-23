@@ -1,19 +1,26 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import Header from './Header/Header';
+import Title from './Title/Title';
+import OneTwoThree from './OneTwoThree/OneTwoThree';
+import Slider from './Slider/Slider';
+import Pricing from './Pricing/Pricing';
+import ContactUs from './ContactUs/ContactUs';
+import Footer from './Footer/Footer';
 
 class App extends Component {
     render() {
         return (
+            // TODO make sections
             <div className="App">
-                <header className="App-header">
-                    <img src={logo} className="App-logo" alt="logo" />
-                    <h1 className="App-title">Welcome to React</h1>
-                </header>
-                <p className="App-intro">
-                    To get started, edit <code>src/App.js</code> and save to
-                    reload.
-                </p>
+                <Header />
+                <Title />
+                <OneTwoThree />
+                <Slider />
+                <Pricing />
+                <ContactUs />
+                <Footer />
             </div>
         );
     }

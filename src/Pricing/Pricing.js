@@ -1,5 +1,7 @@
 import React from 'react';
-import { Grid, Row, Col } from 'react-bootstrap';
+import { Grid, Row, Col, Button } from 'react-bootstrap';
+
+import './Pricing.css';
 
 // TODO move data in another file
 const plans = [
@@ -56,18 +58,18 @@ const Plan = ({
     integrations,
     remoteWipe
 }) => (
-    <div className={'text-center' + (highlighted ? ' highlighted' : '')}>
+    <div className={'text-center Plan ' + (highlighted ? ' highlighted' : '')}>
         <div>
-            <h6>{name}</h6>
-            <p>{shortDescription}</p>
+            <h6 className="name">{name}</h6>
+            <p className="short-description">{shortDescription}</p>
             <hr />
-            <p>${price}</p>
-            <small>{periodicity}</small>
-            <p>{description}</p>
+            <p className="price">${price}</p>
+            <p className="periodicity">{periodicity}</p>
+            <p className="description">{description}</p>
             <hr />
         </div>
 
-        <ul>
+        <ul className="features">
             <li>{gbOfSpace} Gb of space</li>
             <li>{recoveryDays} days of file recovery</li>
             <li>MS Office 365 integration</li>
@@ -80,34 +82,54 @@ const Plan = ({
         </ul>
         <div className="text-center">
             {/* TODO use button component from bootstrap */}
-            <button className="btn btn-default">Get started</button>
+            <Button block className="get-started-btn">
+                Get started
+            </Button>
         </div>
     </div>
 );
 
 export default () => (
-    // Grid, Row, Col
-    <Grid>
-        <Row>
-            <Col className="text-center">
-                <h2>Simple pricing</h2>
-                <p>
-                    It seems from the moment you begin to take your love of
-                    astronomy seriously, the thing that is on your mind is what
-                    kind.
-                </p>
-            </Col>
-        </Row>
-        <Row>
-            <Col>
-                <Row>
-                    {plans.map(planData => (
-                        <Col md={4} key={planData.name}>
-                            <Plan {...planData} />
-                        </Col>
-                    ))}
-                </Row>
-            </Col>
-        </Row>
-    </Grid>
+    <div className="Pricing">
+        <Grid>
+            <Row>
+                <Col
+                    className="title-container text-center"
+                    md={8}
+                    mdOffset={2}
+                >
+                    <h2 className="title">Simple pricing</h2>
+                    <p className="subtitle">
+                        It seems from the moment you begin to take your love of
+                        astronomy seriously, the thing that is on your mind is
+                        what kind.
+                    </p>
+                </Col>
+            </Row>
+            <Row>
+                <Col className="Plans" md={10} mdOffset={1}>
+                    <Row>
+                        {plans.map((planData, index) => (
+                            <Col
+                                md={4}
+                                key={planData.name}
+                                className={
+                                    'Plan-container' +
+                                    (index === 0
+                                        ? ' first'
+                                        : '' +
+                                          (planData.highlighted
+                                              ? ' highlighted-col'
+                                              : '') +
+                                          (index === 2 ? ' last' : ''))
+                                }
+                            >
+                                <Plan {...planData} />
+                            </Col>
+                        ))}
+                    </Row>
+                </Col>
+            </Row>
+        </Grid>
+    </div>
 );

@@ -1,0 +1,192 @@
+// TODO make variables for colors
+
+.Pricing {
+    background-color: #f9f9f9;
+    padding-top: 120px;
+
+    .title-container {
+        padding: 0 30px;
+        margin-bottom: 92px;
+
+        .title {
+            font-size: 52px;
+            font-weight: 300;
+            line-height: 1.12;
+            letter-spacing: -2.1px;
+            margin-bottom: 24px;
+            color: #43484d;
+        }
+
+        .subtitle {
+            font-size: 22px;
+            font-weight: 300;
+            line-height: 1.45;
+            color: #5e6977;
+        }
+    }
+
+    .Plans {
+        // border-radius: 6px;
+        // background-color: transparent;
+        // box-shadow: 2.4px 1.8px 3px 0 rgba(0, 0, 0, 0.15);
+        margin-bottom: -130px;
+    }
+
+    // TODO aggiustare il nesting, correggendo il componente
+    .Plan-container {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: #ffffff;
+
+        box-shadow: 2.4px 1.8px 3px 0 rgba(0, 0, 0, 0.15);
+
+        &.first {
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+            border-right: 1px solid #f4f4f4;
+        }
+
+        &.last {
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+        }
+    }
+
+    .Plan {
+        .name {
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            text-align: center;
+            color: #358ed7;
+        }
+
+        .short-description {
+            font-size: 16px;
+            line-height: 1.56;
+            text-align: center;
+            color: #86939e;
+        }
+
+        hr {
+            background-color: #e1e8ee;
+            margin-bottom: 30px;
+        }
+
+        .price {
+            font-size: 52px;
+            font-weight: 300;
+            line-height: 1.12;
+            letter-spacing: -2.1px;
+            color: #43484d;
+        }
+
+        .periodicity {
+            font-size: 14px;
+            line-height: 1;
+            margin-bottom: 32px;
+            text-align: center;
+            color: #86939e;
+        }
+
+        .description {
+            font-size: 16px;
+            line-height: 1.56;
+            margin-bottom: 33px;
+            text-align: center;
+            color: #86939e;
+        }
+
+        ul.features {
+            list-style: none;
+
+            li {
+                font-size: 14px;
+                line-height: 1;
+                margin-bottom: 37px;
+                text-align: left;
+                position: relative;
+                color: #5e6977;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 8px;
+                    height: 15px;
+                    border-right: 2px solid #86d35d;
+                    border-bottom: 2px solid #86d35d;
+                    transform: rotate(48deg);
+                    left: -28px;
+                    top: -2px;
+                }
+
+                &.unmarked {
+                    color: #bfc7ce;
+                    &::before {
+                        content: none;
+                    }
+                }
+            }
+        }
+
+        .get-started-btn {
+            border-radius: 6px;
+            border: solid 2px #e1e8ee;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.19;
+            color: #358ed7;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+    }
+
+    .highlighted-col {
+        background-color: #39add1;
+    }
+
+    .highlighted.Plan {
+        .name {
+            opacity: 0.7;
+            color: #ffffff;
+        }
+
+        .short-description {
+            opacity: 0.6;
+            color: #ffffff;
+        }
+
+        hr {
+            opacity: 0.2;
+        }
+
+        .price {
+            color: #ffffff;
+        }
+
+        .periodicity {
+            opacity: 0.7;
+            color: #ffffff;
+        }
+
+        .description {
+            opacity: 0.6;
+            color: #ffffff;
+        }
+
+        ul.features {
+            list-style: none;
+
+            li {
+                color: #ffffff;
+            }
+        }
+
+        .get-started-btn {
+            background-color: #7dc855;
+            border: solid 2px #7dc855;
+            color: #ffffff;
+        }
+    }
+}

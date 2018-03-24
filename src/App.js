@@ -10,16 +10,35 @@ import ContactUs from './ContactUs/ContactUs';
 import Footer from './Footer/Footer';
 
 class App extends Component {
+    sections = [
+        { name: 'Features', key: 'Features' },
+        { name: 'Pricing', key: 'Pricing' },
+        { name: 'Contact us', key: 'Contact us' }
+    ];
+
+    scrollToSection(key) {
+        console.log(key);
+        this.sections[key] && this.sections[key].scrollIntoView();
+    }
+
     render() {
         return (
-            // TODO make sections
             <div className="App">
-                <Header />
-                <Title />
-                <OneTwoThree />
-                <Slider />
-                <Pricing />
-                <ContactUs />
+                <Header navItems={this.sections} />
+                {/* TODO can i loop throgh these? */}
+                <section>
+                    <Title />
+                    <OneTwoThree />
+                </section>
+                <section>
+                    <Slider />
+                </section>
+                <section>
+                    <Pricing />
+                </section>
+                <section>
+                    <ContactUs />
+                </section>
                 <Footer />
             </div>
         );

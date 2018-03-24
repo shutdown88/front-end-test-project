@@ -4,8 +4,8 @@ import madisoftLogo from './img/logo-madisoft.png';
 
 import './Header.css';
 
-export default () => (
-    <Navbar className="Header" fixedTop collapseOnSelect>
+export default ({ onSelect, navItems = [] }) => (
+    <Navbar className="Header" fixedTop collapseOnSelect onSelect={onSelect}>
         <Navbar.Header>
             <Navbar.Brand>
                 <a href="#brand">
@@ -16,15 +16,11 @@ export default () => (
         </Navbar.Header>
         <Navbar.Collapse>
             <Nav>
-                <NavItem eventKey={1} href="#">
-                    Features
-                </NavItem>
-                <NavItem eventKey={2} href="#">
-                    Pricing
-                </NavItem>
-                <NavItem eventKey={2} href="#">
-                    Contact us
-                </NavItem>
+                {navItems.map(({ name, key }) => (
+                    <NavItem key={key} eventKey={key} /* href="#" */>
+                        {name}
+                    </NavItem>
+                ))}
             </Nav>
         </Navbar.Collapse>
     </Navbar>

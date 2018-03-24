@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormGroup, FormControl, HelpBlock } from 'react-bootstrap';
+import { Button, FormGroup, FormControl, HelpBlock } from 'react-bootstrap';
 
 export default () => (
     <form>
@@ -25,5 +25,9 @@ export default () => (
                 We’ll call you if you prefer
             </HelpBlock>
         </FormGroup>
+
+        <Button type="submit" bsStyle="success" bsSize="large">
+            Send
+        </Button>
     </form>
 );

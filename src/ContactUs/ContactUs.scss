@@ -1,55 +1,79 @@
 .ContactUs {
     padding-top: 260px;
+    padding-bottom: 38px;
     background-color: #5e6977;
     color: #ffffff;
+    text-align: center;
+
+    h1 {
+        font-size: 52px;
+        font-weight: 300;
+        line-height: 1.12;
+        letter-spacing: -2.1px;
+    }
 
     h2 {
+        // TODO need to wrap in bootstrap column
+        // all component
+        margin-top: 30px;
+        margin-bottom: 14px;
         opacity: 0.8;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.78;
     }
 
     .requiredNote {
         font-size: 14px;
         font-weight: 300;
-        font-style: normal;
-        font-stretch: normal;
         line-height: 2.29;
-        letter-spacing: normal;
-        text-align: center;
+        margin-bottom: 40px;
     }
 
     span.required {
         color: #f18a8a;
     }
 
-    input {
-        border-radius: 6px;
-        background-color: #3d4250;
-        border-color: #3d4250;
+    .form-group {
+        margin-bottom: 25px;
 
-        &:focus {
+        input[type='text'] {
+            border-radius: 6px;
+            background-color: #3d4250;
             border-color: #3d4250;
-            box-shadow: none;
+            height: 60px;
+            padding: 23px 23px;
+
+            &:focus {
+                border-color: #3d4250;
+                box-shadow: none;
+            }
+
+            &,
+            &::placeholder {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 1.06;
+                // TODO, mettere opacity a placeholder?
+                // vedere come si integra con validazione campi
+                // Usare tipi specifici di fields per validazione?
+                // forse non sono compatibili con i vecchi browser
+                color: #ffffff;
+            }
         }
 
-        &,
-        &::placeholder {
+        .help-block {
+            margin-top: 8px;
             font-size: 18px;
-            font-weight: 500;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 1.06;
-            letter-spacing: normal;
-            color: #ffffff;
+            font-weight: 300;
+            line-height: 1.78;
+            color: #d1d2d6;
         }
     }
 
-    .help-block {
-        font-size: 18px;
-        font-weight: 300;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1.78;
-        letter-spacing: normal;
-        color: #d1d2d6;
+    button[type='submit'] {
+        width: 180px;
+        height: 60px;
+        border-radius: 6px;
     }
 }

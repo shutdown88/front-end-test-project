@@ -1,8 +1,11 @@
 .Footer {
     background-color: #545e6b;
+    text-align: center;
 
-    img {
-        // TODO responsive?
-        margin-left: 150px;
+    img.footer-logo {
+        height: 100px;
+        width: 100px;
+        margin-top: 18px;
+        margin-bottom: 18px;
     }
 }

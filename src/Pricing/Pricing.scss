@@ -41,12 +41,14 @@
         box-shadow: 2.4px 1.8px 3px 0 rgba(0, 0, 0, 0.15);
 
         &.first {
+            // TODO border radius solo per schermo grande
             border-top-left-radius: 6px;
             border-bottom-left-radius: 6px;
             border-right: 1px solid #f4f4f4;
         }
 
         &.last {
+            // TODO border radius solo per schermo grande
             border-top-right-radius: 6px;
             border-bottom-right-radius: 6px;
         }

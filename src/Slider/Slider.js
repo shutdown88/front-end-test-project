@@ -3,15 +3,28 @@ import { Carousel } from 'react-bootstrap';
 
 import './Slider.css';
 
+import prevImg from './img/prev.png';
+import nextImg from './img/next.png';
+
 import first from './img/First.png';
 import second from './img/Second.png';
 import third from './img/Third.png';
 import fourth from './img/Fourth.png';
 import fifth from './img/Fifth.png';
 
+const ControlIcon = ({ icon, altText }) => (
+    <span>
+        <img src={icon} alt={altText} />
+    </span>
+);
+
 export default () => (
     <div className="Slider">
-        <Carousel interval={null}>
+        <Carousel
+            interval={null}
+            prevIcon={<ControlIcon icon={prevImg} altText="previous" />}
+            nextIcon={<ControlIcon icon={nextImg} altText="next" />}
+        >
             <Carousel.Item>
                 <img alt="First" src={first} />
                 <Carousel.Caption>

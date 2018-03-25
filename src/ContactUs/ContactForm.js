@@ -7,7 +7,7 @@ export default class ContactForm extends Component {
     constructor(props) {
         super(props);
 
-        this.state = { submitted: false };
+        this.state = {};
     }
 
     isValidName = () => this.state.name && this.state.name.trim().length > 0;
@@ -95,8 +95,9 @@ export default class ContactForm extends Component {
                     bsStyle="success"
                     bsSize="large"
                     disabled={!this.isValidState()}
-                    onClick={() => {
-                        this.setState.submitted = true;
+                    onClick={e => {
+                        e.preventDefault();
+                        alert('Thank you!');
                     }}
                 >
                     Send

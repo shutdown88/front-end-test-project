@@ -8,7 +8,7 @@ export default ({ onSelect, navItems = [] }) => (
     <Navbar className="Header" fixedTop collapseOnSelect onSelect={onSelect}>
         <Navbar.Header>
             <Navbar.Brand>
-                <a href="#brand">
+                <a href="#">
                     <img alt="Brand" src={madisoftLogo} />
                 </a>
             </Navbar.Brand>
@@ -17,7 +17,7 @@ export default ({ onSelect, navItems = [] }) => (
         <Navbar.Collapse>
             <Nav>
                 {navItems.map(({ name, key }) => (
-                    <NavItem key={key} eventKey={key} /* href="#" */>
+                    <NavItem key={key} eventKey={key} href={`#${key}`}>
                         {name}
                     </NavItem>
                 ))}

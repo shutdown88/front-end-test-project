@@ -13,8 +13,6 @@
     }
 
     h2 {
-        // TODO need to wrap in bootstrap column
-        // all component
         margin-top: 30px;
         margin-bottom: 14px;
         opacity: 0.8;
@@ -40,12 +38,11 @@
         input[type='text'] {
             border-radius: 6px;
             background-color: #3d4250;
-            border-color: #3d4250;
             height: 60px;
             padding: 23px 23px;
+            color: #ffffff;
 
             &:focus {
-                border-color: #3d4250;
                 box-shadow: none;
             }
 
@@ -54,11 +51,6 @@
                 font-size: 18px;
                 font-weight: 500;
                 line-height: 1.06;
-                // TODO, mettere opacity a placeholder?
-                // vedere come si integra con validazione campi
-                // Usare tipi specifici di fields per validazione?
-                // forse non sono compatibili con i vecchi browser
-                color: #ffffff;
             }
         }
 

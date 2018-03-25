@@ -16,27 +16,21 @@ class App extends Component {
         { name: 'Contact us', key: 'Contact us' }
     ];
 
-    scrollToSection(key) {
-        console.log(key);
-        this.sections[key] && this.sections[key].scrollIntoView();
-    }
-
     render() {
         return (
             <div className="App">
                 <Header navItems={this.sections} />
-                {/* TODO can i loop throgh these? */}
-                <section>
+                <section id="Features">
                     <Title />
                     <OneTwoThree />
                 </section>
                 <section>
                     <Slider />
                 </section>
-                <section>
+                <section id="Pricing">
                     <Pricing />
                 </section>
-                <section>
+                <section id="Contact us">
                     <ContactUs />
                 </section>
                 <Footer />

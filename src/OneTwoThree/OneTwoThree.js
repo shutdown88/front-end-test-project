@@ -66,7 +66,6 @@ export default class OneTwoThree extends Component {
             });
     }
 
-    // Fluid grid?
     render() {
         return (
             <Grid className="OneTwoThree">
@@ -81,9 +80,7 @@ export default class OneTwoThree extends Component {
                         ) : (
                             // check item exists
                             <DynamicPanel dynamicData={this.state.data.item} />
-                        )
-                        // : JSON.stringify(this.state.data)
-                        }
+                        )}
                     </Col>
                 </Row>
                 <Row className="DynamicDataButtons">

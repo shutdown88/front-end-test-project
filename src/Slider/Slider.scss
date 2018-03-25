@@ -1,13 +1,19 @@
 .Slider {
-    height: 500px;
     margin-top: 156px;
 
-    .carousel-indicators {
+    ol.carousel-indicators {
+        position: initial;
+        width: auto;
+        text-align: left;
+        margin: 0;
+        margin-top: 30px;
+
         li {
             width: 6px;
             height: 6px;
             opacity: 0.2;
             background-color: #86939e;
+            margin-right: 10px;
         }
         li.active {
             opacity: 1;
@@ -17,9 +23,16 @@
         }
     }
 
-    // TODO vedere nei vari breakpoint delle media query
-    img.carousel-intro {
-        margin-left: -150px;
+    img {
+        &.carousel-intro {
+            margin-left: -150px;
+        }
+
+        @media (max-width: 992px) {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
     }
 
     .carousel-control {
@@ -29,8 +42,11 @@
     }
 
     .caption {
-        // top: 30%;
-        // left: 60%;
+        @media (min-width: 992px) {
+            margin-top: 80px;
+        }
+        height: 300px;
+
         text-shadow: none;
 
         h3 {

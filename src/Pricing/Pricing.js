@@ -98,7 +98,7 @@ export default () => (
                     md={8}
                     mdOffset={2}
                 >
-                    <h2 className="title">Simple pricing</h2>
+                    <h2 className="title">Simple Pricing</h2>
                     <p className="subtitle">
                         It seems from the moment you begin to take your love of
                         astronomy seriously, the thing that is on your mind is

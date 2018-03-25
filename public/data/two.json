@@ -1,0 +1,21 @@
+{
+  "item": {
+    "name": "Art Education",
+    "details": "An art school is an educational institution with a primary focus on the visual arts, especially illustration, painting, photography, sculpture, and graphic design. Art schools are institutions with elementary, secondary, post-secondary or undergraduate, or graduate or postgraduate programs in these areas. They are distinguished from larger institutions which also may offer majors or degrees in the visual arts, but only as one part of a broad-based range of programs (such as the liberal arts and sciences). France's École des Beaux-Arts is, perhaps, the first model for such organized instruction, breaking with a tradition of master and apprentice instruction when it was formed.",
+    "source": "https://en.wikipedia.org/wiki/Art_school",
+    "references": [
+      { "title": "Academy figure", "url": "https://en.wikipedia.org/wiki/Academy_figure" },
+      { "title": "Visual arts education", "url": "https://en.wikipedia.org/wiki/Visual_arts_education" },
+      { "title": "École des Beaux-Arts", "url": "https://en.wikipedia.org/wiki/%C3%89cole_des_Beaux-Arts" },
+      { "title": "List of art schools", "url": "https://en.wikipedia.org/wiki/List_of_art_schools" },
+      { "title": "List of artist-initiated schools", "url": "https://en.wikipedia.org/wiki/List_of_artist-initiated_schools" },
+      { "title": "List of art schools in Europe", "url": "https://en.wikipedia.org/wiki/List_of_art_schools_in_Europe" }
+    ],
+    "images": [
+      "http://tlpsart.edublogs.org/files/2012/01/IMG_4173-1n2ltcn.jpg",
+      "http://tlpsart.edublogs.org/files/2010/07/IMG_1629.JPG",
+      "http://visualocart.edu.gr/sites/default/files/activities/g1wp7OJ.jpg",
+      "http://visualocart.edu.gr/sites/default/files/activities/kuHOjqW_0.jpg"
+    ]
+  }
+}

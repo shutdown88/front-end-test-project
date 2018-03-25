@@ -1,0 +1,40 @@
+.DynamicPanel {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+
+    .content {
+        padding: 20px;
+    }
+    .images-container {
+        padding: 10px;
+        height: 455px;
+
+        .scroll-container {
+            background-color: white;
+            border-radius: 6px;
+            height: 100%;
+            overflow-y: scroll;
+
+            .images {
+                .image-container {
+                    padding: 10px;
+
+                    img {
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "item": {
+    "name": "Mathematics Education",
+    "details": "In contemporary education, mathematics education is the practice of teaching and learning mathematics, along with the associated scholarly research.\n Researchers in mathematics education are primarily concerned with the tools, methods and approaches that facilitate practice or the study of practice; however, mathematics education research, known on the continent of Europe as the didactics or pedagogy of mathematics, has developed into an extensive field of study, with its own concepts, theories, methods, national and international organisations, conferences and literature. This article describes some of the history, influences and recent controversies.",
+    "source": "https://en.wikipedia.org/wiki/Mathematics_education",
+    "references": [
+      { "title": "Anti-racist mathematics", "url": "https://en.wikipedia.org/wiki/Anti-racist_mathematics" },
+      { "title": "Cognitively Guided Instruction", "url": "https://en.wikipedia.org/wiki/Cognitively_Guided_Instruction" },
+      { "title": "Pre-math skills", "url": "https://en.wikipedia.org/wiki/Pre-math_skills" },
+      { "title": "Mathematics education in the United States", "url": "https://en.wikipedia.org/wiki/Mathematics_education_in_the_United_States" },
+      { "title": "Dyscalculia", "url": "https://en.wikipedia.org/wiki/Dyscalculia" }
+    ],
+    "images": [
+      "http://www.kellogg.edu/wp-content/uploads/2013/10/math-1.jpg",
+      "http://www.umpi.edu/academics/wp-content/uploads/sites/2/2015/07/lovemath251383756crm-comp.jpg",
+      "http://www.taneter.org/timbuktu%20manuscripts.jpg",
+      "https://math.mit.edu/news/renovation/images/completed_winter16/190.jpg"
+    ]
+  }
+}

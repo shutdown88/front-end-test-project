@@ -1,4 +1,17 @@
 .OneTwoThree {
+    .dynamic-data-container {
+        position: relative;
+        max-width: 1140px;
+        height: 455px;
+        background-color: #f1f6f7;
+
+        .loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+    }
+
     .DynamicDataButtons {
         margin-top: 65px;
 

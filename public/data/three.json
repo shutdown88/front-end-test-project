@@ -1,0 +1,22 @@
+{
+  "item": {
+    "name": "Computer Science",
+    "details": "Computer science is the study of the theory, experimentation, and engineering that form the basis for the design and use of computers. It is the scientific and practical approach to computation and its applications and the systematic study of the feasibility, structure, expression, and mechanization of the methodical procedures (or algorithms) that underlie the acquisition, representation, processing, storage, communication of, and access to information. An alternate, more succinct definition of computer science is the study of automating algorithmic processes that scale. A computer scientist specializes in the theory of computation and the design of computational systems.",
+    "source": "https://en.wikipedia.org/wiki/Computer_science",
+    "references": [
+      { "title": "Academic genealogy of computer scientists", "url": "https://en.wikipedia.org/wiki/Academic_genealogy_of_computer_scientists" },
+      { "title": "Association for Computing Machinery", "url": "https://en.wikipedia.org/wiki/Association_for_Computing_Machinery" },
+      { "title": "Computer Science Teachers Association", "url": "https://en.wikipedia.org/wiki/Computer_Science_Teachers_Association" },
+      { "title": "Informatics and Engineering informatics", "url": "https://en.wikipedia.org/wiki/Engineering_informatics" },
+      { "title": "List of academic computer science departments", "url": "https://en.wikipedia.org/wiki/List_of_academic_computer_science_departments" },
+      { "title": "List of computer scientists", "url": "https://en.wikipedia.org/wiki/List_of_computer_scientists" },
+      { "title": "List of publications in computer science", "url": "https://en.wikipedia.org/wiki/List_of_important_publications_in_computer_science" }
+    ],
+    "images": [
+      "http://s7.computerhistory.org/is/image/CHM/500002003p-03-04?$re-medium$",
+      "https://codeinstitute.net/wp-content/uploads/2015/08/code-e1439833988781.jpg",
+      "https://d3s5r33r268y59.cloudfront.net/31804/products/thumbs/2015-09-19T22:39:22.119Z-RoboPi_0831_web.jpg.2560x2560_q85.jpg",
+      "https://www.icsi.berkeley.edu/icsi/sites/default/files/blogphotos/bluewaters_front.jpg"
+    ]
+  }
+}

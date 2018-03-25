@@ -10,8 +10,6 @@ import one from './img/one.png';
 import two from './img/two.png';
 import three from './img/three.png';
 
-// TODO stato selezionato dei bottoni one, two, three per capire quello attivo
-
 const buttonText = 'Button for show dynamic data';
 
 const dynamicData = [
@@ -20,9 +18,9 @@ const dynamicData = [
     { key: 'three', image: three, title: 'Three', text: buttonText }
 ];
 
-const DynamicDataButton = ({ file, image, title, text, onClick }) => (
+const DynamicDataButton = ({ file, image, title, text, onClick, selected }) => (
     <div
-        className="DynamicDataButton"
+        className={'DynamicDataButton' + (selected ? ' selected' : '')}
         onClick={() => {
             onClick(file);
         }}
@@ -48,7 +46,7 @@ export default class OneTwoThree extends Component {
     }
 
     onButtonClick(key) {
-        this.setState({ loading: true, error: false });
+        this.setState({ loading: true, error: false, selected: key });
         fetch(`./data/${key}.json`)
             .then(resp => {
                 if (resp.ok) {
@@ -88,6 +86,7 @@ export default class OneTwoThree extends Component {
                         <Col md={4} key={key}>
                             <DynamicDataButton
                                 file={key}
+                                selected={this.state.selected === key}
                                 {...data}
                                 onClick={this.onButtonClick}
                             />

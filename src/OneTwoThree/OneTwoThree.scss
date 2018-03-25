@@ -1,8 +1,8 @@
 .OneTwoThree {
     .dynamic-data-container {
         position: relative;
-        max-width: 1140px;
         height: 455px;
+        overflow-y: scroll;
         background-color: #f1f6f7;
 
         .loading {
@@ -33,8 +33,6 @@
                 margin-left: 15px;
                 padding: 5px 0;
 
-                //  TODO da rivedere
-
                 .title {
                     font-size: 18px;
                     line-height: 1.39;
@@ -52,16 +50,6 @@
             }
 
             &.selected {
-                // background-color: #358fd7;
-                .title {
-                    // color: #ffffff;
-                    // text-decoration: underline;
-                }
-                .text {
-                    // color: #ffffff;
-                    // opacity: 0.7;
-                }
-
                 border: 2px solid #86939e;
             }
         }

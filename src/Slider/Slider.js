@@ -22,7 +22,9 @@ const renderIndicators = (active, length) => (
     <ol className="carousel-indicators">
         {Array.apply(null, { length: length })
             .map(Number.call, Number)
-            .map(index => <li className={index === active ? 'active' : ''} />)}
+            .map(index => (
+                <li className={index === active ? 'active' : ''} key={index} />
+            ))}
     </ol>
 );
 

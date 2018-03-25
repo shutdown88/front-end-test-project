@@ -6,42 +6,45 @@ export default ({
     dynamicData: { name, details, source, references, images }
 }) => (
     <Row className="DynamicPanel">
-        <Col className="content" md={8}>
-            <h1>{name}</h1>
-            <p className="text-justify">{details}</p>
-            <p className="text-right">
-                <i>
-                    <a href={source} target="_blank">
-                        Source
-                    </a>
-                </i>
-            </p>
-            <p>References:</p>
-            <ul>
-                {references.map(({ title, url }) => (
-                    <li>
-                        <a href={url} target="_blank">
-                            {title}
-                        </a>
-                    </li>
-                ))}
-            </ul>
-        </Col>
-        <Col className="images-container" md={4}>
-            <div className="scroll-container">
-                <div className="images">
-                    {images.map((image, index) => (
-                        <div className="image-container">
-                            <Image
-                                responsive
-                                key={image}
-                                src={image}
-                                alt={`${name} ${index}`}
-                            />
-                        </div>
-                    ))}
-                </div>
-            </div>
+        <Col className="content" md={12}>
+            <h1>
+                <a href={source} target="_blank">
+                    {name}
+                </a>
+            </h1>
+            <Row>
+                <Col md={9}>
+                    <blockquote className="text-justify">
+                        <p>{details}</p>
+                    </blockquote>
+                    <div className="images">
+                        {images.map((image, index) => (
+                            <div className="image-container" key={image}>
+                                <Image
+                                    width={100}
+                                    height={89}
+                                    src={image}
+                                    alt={`${name} ${index}`}
+                                />
+                            </div>
+                        ))}
+                    </div>
+                </Col>
+                <Col md={3}>
+                    <div className="references">
+                        <p>References:</p>
+                        <ul>
+                            {references.map(({ title, url }) => (
+                                <li key={title}>
+                                    <a href={url} target="_blank">
+                                        {title}
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </Col>
+            </Row>
         </Col>
     </Row>
 );

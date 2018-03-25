@@ -76,7 +76,6 @@ export default class OneTwoThree extends Component {
                         ) : this.state.error ? (
                             'error'
                         ) : (
-                            // check item exists
                             <DynamicPanel dynamicData={this.state.data.item} />
                         )}
                     </Col>

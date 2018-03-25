@@ -3,7 +3,6 @@ import { Grid, Row, Col, Button } from 'react-bootstrap';
 
 import './Pricing.css';
 
-// TODO move data in another file
 const plans = [
     {
         name: 'Basic',
@@ -81,7 +80,6 @@ const Plan = ({
             </li>
         </ul>
         <div className="text-center">
-            {/* TODO use button component from bootstrap */}
             <Button block className="get-started-btn">
                 Get started
             </Button>
@@ -117,11 +115,12 @@ export default () => (
                                     'Plan-container' +
                                     (index === 0
                                         ? ' first'
-                                        : '' +
-                                          (planData.highlighted
-                                              ? ' highlighted-col'
-                                              : '') +
-                                          (index === 2 ? ' last' : ''))
+                                        : index === plans.length - 1
+                                            ? ' last'
+                                            : '') +
+                                    (planData.highlighted
+                                        ? ' highlighted-col'
+                                        : '')
                                 }
                             >
                                 <Plan {...planData} />

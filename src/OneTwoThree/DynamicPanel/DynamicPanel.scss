@@ -5,26 +5,31 @@
 
     .content {
         padding: 20px;
-    }
-    .images-container {
-        padding: 10px;
-        height: 455px;
 
-        .scroll-container {
-            background-color: white;
+        .images {
+            padding: 10px;
+
+            display: flex;
+            align-items: center;
+
+            background-color: rgba(0, 0, 0, 0.03);
             border-radius: 6px;
-            height: 100%;
-            overflow-y: scroll;
+            height: 130px;
+            overflow-x: scroll;
 
-            .images {
-                .image-container {
-                    padding: 10px;
+            .image-container {
+                padding: 10px;
 
-                    img {
-                        border-radius: 5px;
-                    }
+                img {
+                    border-radius: 5px;
                 }
             }
+        }
+    }
+
+    .references {
+        @media (max-width: 992px) {
+            margin-top: 20px;
         }
     }
 }

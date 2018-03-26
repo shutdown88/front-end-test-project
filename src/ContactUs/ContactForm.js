@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import { Button, FormGroup, FormControl, HelpBlock } from 'react-bootstrap';
+import {
+    isValidName,
+    isValidEmail,
+    isValidPhone
+} from './Validation/validation';
 
 const toValidationState = b => (b ? 'success' : 'error');
 
@@ -10,15 +15,11 @@ export default class ContactForm extends Component {
         this.state = {};
     }
 
-    isValidName = () => this.state.name && this.state.name.trim().length > 0;
+    isValidName = () => this.state.name && isValidName(this.state.name);
 
-    isValidEmail = () =>
-        /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i.test(
-            this.state.email
-        );
+    isValidEmail = () => isValidEmail(this.state.email);
 
-    isValidPhone = () =>
-        !this.state.phone || /^\d{1,11}$/.test(this.state.phone);
+    isValidPhone = () => !this.state.phone || isValidPhone(this.state.phone);
 
     isValidState = () =>
         this.isValidName() && this.isValidEmail() && this.isValidPhone();

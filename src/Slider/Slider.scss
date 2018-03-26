@@ -54,6 +54,10 @@
         background-image: none;
         position: absolute;
         top: 50%;
+
+        @media (max-width: 992px) {
+            top: 40%;
+        }
     }
 
     .caption {

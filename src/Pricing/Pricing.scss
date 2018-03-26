@@ -37,7 +37,6 @@
         box-shadow: 2.4px 1.8px 3px 0 rgba(0, 0, 0, 0.15);
 
         @media (max-width: 992px) {
-            // border-top: 1px solid black;
             margin-top: 10px;
         }
 
@@ -104,6 +103,50 @@
             color: $text-color;
         }
 
+        &.highlighted {
+            .name {
+                opacity: 0.7;
+                color: #ffffff;
+            }
+
+            .short-description {
+                opacity: 0.6;
+                color: #ffffff;
+            }
+
+            hr {
+                opacity: 0.2;
+            }
+
+            .price {
+                color: #ffffff;
+            }
+
+            .periodicity {
+                opacity: 0.7;
+                color: #ffffff;
+            }
+
+            .description {
+                opacity: 0.6;
+                color: #ffffff;
+            }
+
+            ul.features {
+                list-style: none;
+
+                li {
+                    color: #ffffff;
+                }
+            }
+
+            .get-started-btn {
+                background-color: #7dc855;
+                border: solid 2px #7dc855;
+                color: #ffffff;
+            }
+        }
+
         ul.features {
             list-style: none;
 
@@ -150,49 +193,5 @@
 
     .highlighted-col {
         background-color: #39add1;
-    }
-
-    .highlighted.Plan {
-        .name {
-            opacity: 0.7;
-            color: #ffffff;
-        }
-
-        .short-description {
-            opacity: 0.6;
-            color: #ffffff;
-        }
-
-        hr {
-            opacity: 0.2;
-        }
-
-        .price {
-            color: #ffffff;
-        }
-
-        .periodicity {
-            opacity: 0.7;
-            color: #ffffff;
-        }
-
-        .description {
-            opacity: 0.6;
-            color: #ffffff;
-        }
-
-        ul.features {
-            list-style: none;
-
-            li {
-                color: #ffffff;
-            }
-        }
-
-        .get-started-btn {
-            background-color: #7dc855;
-            border: solid 2px #7dc855;
-            color: #ffffff;
-        }
     }
 }

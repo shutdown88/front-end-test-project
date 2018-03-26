@@ -1,4 +1,4 @@
-// TODO make variables for colors
+@import '_colors.scss';
 
 .Pricing {
     background-color: #f9f9f9;
@@ -14,14 +14,14 @@
             line-height: 1.12;
             letter-spacing: -2.1px;
             margin-bottom: 24px;
-            color: #43484d;
+            color: $title-color;
         }
 
         .subtitle {
             font-size: 22px;
             font-weight: 300;
             line-height: 1.45;
-            color: #5e6977;
+            color: $subtitle-color;
         }
     }
 
@@ -65,14 +65,14 @@
             text-transform: uppercase;
             letter-spacing: 0.6px;
             text-align: center;
-            color: #358ed7;
+            color: $link-color;
         }
 
         .short-description {
             font-size: 16px;
             line-height: 1.56;
             text-align: center;
-            color: #86939e;
+            color: $text-color;
         }
 
         hr {
@@ -85,7 +85,7 @@
             font-weight: 300;
             line-height: 1.12;
             letter-spacing: -2.1px;
-            color: #43484d;
+            color: $title-color;
         }
 
         .periodicity {
@@ -93,7 +93,7 @@
             line-height: 1;
             margin-bottom: 32px;
             text-align: center;
-            color: #86939e;
+            color: $text-color;
         }
 
         .description {
@@ -101,7 +101,7 @@
             line-height: 1.56;
             margin-bottom: 33px;
             text-align: center;
-            color: #86939e;
+            color: $text-color;
         }
 
         ul.features {
@@ -113,7 +113,7 @@
                 margin-bottom: 37px;
                 text-align: left;
                 position: relative;
-                color: #5e6977;
+                color: $subtitle-color;
 
                 &::before {
                     content: '';
@@ -142,7 +142,7 @@
             font-size: 16px;
             font-weight: 500;
             line-height: 1.19;
-            color: #358ed7;
+            color: $link-color;
             padding-top: 15px;
             padding-bottom: 15px;
         }

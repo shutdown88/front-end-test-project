@@ -1,3 +1,5 @@
+@import '_colors.scss';
+
 .Slider {
     margin-top: 156px;
 
@@ -12,14 +14,14 @@
             width: 6px;
             height: 6px;
             opacity: 0.2;
-            background-color: #86939e;
+            background-color: $text-color;
             margin-right: 10px;
         }
         li.active {
             opacity: 1;
             width: 10px;
             height: 10px;
-            background-color: #358ed7;
+            background-color: $link-color;
         }
     }
 
@@ -70,20 +72,20 @@
             line-height: 1.19;
             letter-spacing: -1.3px;
             text-align: left;
-            color: #43484d;
+            color: $title-color;
         }
 
         p {
             font-size: 16px;
             line-height: 1.56;
             text-align: left;
-            color: #86939e;
+            color: $text-color;
 
             a.learn-more {
                 font-size: 16px;
                 font-weight: 500;
                 line-height: 1;
-                color: #358ed7;
+                color: $link-color;
                 position: relative;
                 cursor: pointer;
 
@@ -94,8 +96,8 @@
                     width: 8px;
                     height: 8px;
                     margin-left: 5px;
-                    border-right: 2px solid #358ed7;
-                    border-bottom: 2px solid #358ed7;
+                    border-right: 2px solid $link-color;
+                    border-bottom: 2px solid $link-color;
                     transform: rotate(-45deg);
                 }
             }

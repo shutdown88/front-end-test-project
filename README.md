@@ -15,6 +15,8 @@ The validation logic for the Contact form, is tested with [`jest`](https://faceb
 
 The production build can be automatically deployed to [GitHub Pages](https://pages.github.com/).
 
+The built app has also an automatically generated service worker file that will precache local assets and will use a cache-first strategy.
+
 ## Development
 
 For development `node` >= 8 is required.

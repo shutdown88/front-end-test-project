@@ -28,7 +28,6 @@ const renderIndicators = (active, length) => (
     </ol>
 );
 
-// TODO create programmatically
 export default () => (
     <div className="Slider clearfix">
         <Carousel
@@ -42,12 +41,13 @@ export default () => (
                 <Grid>
                     <Row>
                         <Col md={5}>
-                            <img
-                                height={460}
-                                className="carousel-intro"
-                                alt="First"
-                                src={first}
-                            />
+                            <div className="img-container intro-container">
+                                <img
+                                    className="carousel-intro"
+                                    alt="First"
+                                    src={first}
+                                />
+                            </div>
                         </Col>
                         <Col md={6} mdOffset={1}>
                             <div className="caption">
@@ -81,12 +81,14 @@ export default () => (
                 <Grid>
                     <Row>
                         <Col md={5}>
-                            <img height={460} alt="second" src={second} />
+                            <div className="img-container">
+                                <img alt="second" src={second} />
+                            </div>
                         </Col>
                         <Col md={6} mdOffset={1}>
                             <div className="caption">
                                 <Row>
-                                    <Col md={11}>
+                                    <Col md={12}>
                                         <h3>
                                             Modern, User Friendly &amp; Powerful
                                             Interface
@@ -118,7 +120,9 @@ export default () => (
                 <Grid>
                     <Row>
                         <Col md={5}>
-                            <img height={460} alt="Third" src={third} />
+                            <div className="img-container">
+                                <img alt="Third" src={third} />
+                            </div>
                         </Col>
                         <Col md={4} mdOffset={1}>
                             <div className="caption">
@@ -141,7 +145,9 @@ export default () => (
                 <Grid>
                     <Row>
                         <Col md={5}>
-                            <img height={460} alt="Fourth" src={fourth} />
+                            <div className="img-container">
+                                <img alt="Fourth" src={fourth} />
+                            </div>
                         </Col>
                         <Col md={4} mdOffset={1}>
                             <div className="caption">
@@ -165,7 +171,9 @@ export default () => (
                 <Grid>
                     <Row>
                         <Col md={5}>
-                            <img height={460} alt="Fifth" src={fifth} />
+                            <div className="img-container">
+                                <img alt="Fifth" src={fifth} />
+                            </div>
                         </Col>
                         <Col md={4} mdOffset={1}>
                             <div className="caption">

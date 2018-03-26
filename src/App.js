@@ -8,6 +8,9 @@ import Pricing from './Pricing/Pricing';
 import ContactUs from './ContactUs/ContactUs';
 import Footer from './Footer/Footer';
 
+// Main app component that lays out section components,
+// passing sections names to the header
+
 class App extends Component {
     sections = [
         { name: 'Features', key: 'Features' },

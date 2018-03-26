@@ -12,6 +12,7 @@ import three from './img/three.png';
 
 const buttonText = 'Button for show dynamic data';
 
+// Data for dynamic buttons
 const dynamicData = [
     { key: 'one', image: one, title: 'One', text: buttonText },
     { key: 'two', image: two, title: 'Two', text: buttonText },
@@ -33,6 +34,9 @@ const DynamicDataButton = ({ file, image, title, text, onClick, selected }) => (
     </div>
 );
 
+// Main components that keeps track of the selected button,
+// loading state and fetches the requested data
+
 export default class OneTwoThree extends Component {
     constructor(props) {
         super(props);
@@ -42,6 +46,7 @@ export default class OneTwoThree extends Component {
     }
 
     componentDidMount() {
+        // Select first button at start
         this.onButtonClick(dynamicData[0].key);
     }
 

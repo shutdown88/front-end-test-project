@@ -3,6 +3,7 @@ import { Grid, Row, Col, Button } from 'react-bootstrap';
 
 import './Pricing.css';
 
+// Plans data
 const plans = [
     {
         name: 'Basic',
@@ -45,6 +46,8 @@ const plans = [
     }
 ];
 
+// Single plan component
+
 const Plan = ({
     name,
     highlighted,
@@ -86,6 +89,8 @@ const Plan = ({
         </div>
     </div>
 );
+
+// Pricing section
 
 export default () => (
     <div className="Pricing">

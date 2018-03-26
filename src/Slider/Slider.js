@@ -12,21 +12,19 @@ import thirdImg from './img/Third.png';
 import fourthImg from './img/Fourth.png';
 import fifthImg from './img/Fifth.png';
 
-const ControlIcon = ({ icon, altText }) => (
-    <span>
-        <img src={icon} alt={altText} />
-    </span>
-);
-
+// Utility to render indicators of slide index
 const renderIndicators = (active, length) => (
     <ol className="carousel-indicators">
         {Array.apply(null, { length: length })
             .map(Number.call, Number)
+            // [0, 1, ... (length - 1)]
             .map(index => (
                 <li className={index === active ? 'active' : ''} key={index} />
             ))}
     </ol>
 );
+
+// Slides content
 
 const firstSlide = (index, slidesLength) => (
     <Fragment>
@@ -165,6 +163,16 @@ const fifthSlide = (index, slidesLength) => (
 );
 
 const slides = [firstSlide, secondSlide, thirdSlide, fourthSlide, fifthSlide];
+
+// Custom arrow icons
+
+const ControlIcon = ({ icon, altText }) => (
+    <span>
+        <img src={icon} alt={altText} />
+    </span>
+);
+
+// Responsive Carousel
 
 export default () => (
     <div className="Slider clearfix">

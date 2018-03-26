@@ -8,6 +8,8 @@ import {
 
 const toValidationState = b => (b ? 'success' : 'error');
 
+// Components that keeps track of form inputs state and validation
+
 export default class ContactForm extends Component {
     constructor(props) {
         super(props);

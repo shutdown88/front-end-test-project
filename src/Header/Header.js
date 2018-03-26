@@ -4,6 +4,8 @@ import madisoftLogo from './img/logo-madisoft.png';
 
 import './Header.css';
 
+// Header component with sections names and links passed as props
+
 export default ({ onSelect, navItems = [] }) => (
     <Navbar className="Header" fixedTop collapseOnSelect onSelect={onSelect}>
         <Navbar.Header>
